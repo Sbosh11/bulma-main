@@ -1,0 +1,89 @@
+/* WhatWeDo.css */
+
+.first-container {
+  width: 1279px;
+  padding: 85px 0 0 0;
+  margin: auto;
+  /*height: 776px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+
+  background: #fff;
+}
+
+.heading-tag {
+  margin-bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.what-we-do1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.heading-tag-child {
+  width: 40px;
+  height: 4px;
+  flex-shrink: 0;
+  background: var(--primary-active, #d100c9);
+}
+
+.we-offer-a {
+  color: var(--shades-700, #242424);
+  /* heading/is-1 */
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1281px;
+  padding-top: 52px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.section {
+  width: calc(25% - 20px);
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  align-items: flex-start;
+}
+
+.heading {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--shades-700, #242424);
+  line-height: 150%;
+}

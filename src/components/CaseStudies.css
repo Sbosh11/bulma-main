@@ -1,0 +1,82 @@
+h2,
+p {
+  margin: 0;
+}
+
+.image-card-container {
+  width: 1279px;
+  margin: auto;
+  /*height: 776px;*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+
+  background: #fff;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 399px;
+  height: 399px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-content {
+  display: flex;
+
+  padding: 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.overlay-heading {
+  color: var(--shades-white, #fff);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.overlay-text {
+  color: var(--shades-white, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.heading-tag {
+  margin-bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.case-studies1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.heading-tag-child {
+  width: 40px;
+  height: 4px;
+  flex-shrink: 0;
+  background: var(--primary-active, #d100c9);
+  margin: 0;
+}

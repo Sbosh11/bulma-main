@@ -1,0 +1,24 @@
+/* Brands.css */
+
+.brand-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  max-width: 1440px;
+
+  padding: 20px;
+}
+
+.brand-item {
+  text-align: center;
+}
+
+.brand-item img {
+  max-width: 100%;
+}
+
+.brand-description {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333; /* Adjust text color as needed */
+}
