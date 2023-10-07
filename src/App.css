@@ -48,6 +48,9 @@ body {
   margin: auto;
   background: #fff;
 }
+* {
+  font-family: "Inter", Arial, sans-serif;
+}
 /*
 * {
   background: #000 !important;

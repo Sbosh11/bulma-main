@@ -88,6 +88,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  /*.first-container {
+    padding: 50px 0 0 0;
+  }*/
   .section-container {
     flex-direction: column;
   }
@@ -98,11 +101,10 @@
 
   .we-offer-a {
     color: var(--shades-700, #242424);
-    /* heading/is-1 */
     font-family: Inter;
     font-size: 2.5em;
     font-weight: 700;
-    line-height: 110%; /* 67.2px */
+    line-height: 120%;
     margin-bottom: 50px;
   }
 }

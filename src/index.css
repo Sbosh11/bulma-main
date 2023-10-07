@@ -8,6 +8,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Inter", monospace;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  src: url(./fonts/inter/Inter-Black.ttf) format("ttf");
 }

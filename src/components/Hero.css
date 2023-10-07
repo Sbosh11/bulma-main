@@ -5,7 +5,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   text-align: left;
-  background: url("../imgs/Hero\ Image.png");
+  background: url("../imgs/Hero\ Image.webp");
   background-size: cover;
   background-repeat: no-repeat !important;
   padding: 0;
@@ -75,7 +75,7 @@
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    height: 50vh;
+    height: 60vh;
     background-position: center;
   }
   .hero-text {
