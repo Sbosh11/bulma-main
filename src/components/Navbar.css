@@ -52,6 +52,10 @@
   line-height: 150%; /* 21px */
 }
 
+.scroll-link {
+  cursor: pointer;
+}
+
 .nav-toggle {
   background: none;
   border: none;
