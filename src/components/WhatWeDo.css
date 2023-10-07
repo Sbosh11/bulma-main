@@ -40,7 +40,7 @@
   color: var(--shades-700, #242424);
   /* heading/is-1 */
   font-family: Inter;
-  font-size: 48px;
+  font-size: 3em;
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 67.2px */
@@ -51,7 +51,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-
   padding-top: 52px;
 }
 
@@ -95,5 +94,15 @@
 
   .section {
     width: 100%;
+  }
+
+  .we-offer-a {
+    color: var(--shades-700, #242424);
+    /* heading/is-1 */
+    font-family: Inter;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 110%; /* 67.2px */
+    margin-bottom: 50px;
   }
 }
