@@ -4,14 +4,13 @@ p {
 }
 
 .image-card-container {
-  width: 1279px;
+  width: 100%;
   margin: auto;
   /*height: 776px;*/
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   text-align: left;
-
   background: #fff;
 }
 
@@ -21,11 +20,12 @@ p {
   justify-content: flex-end;
   align-items: flex-start;
   flex-shrink: 0;
-  width: 399px;
+  width: 32.65%;
   height: 399px;
   background-size: cover;
   background-position: center;
   position: relative;
+  gap: 10px;
 }
 
 .overlay-content {
@@ -79,4 +79,16 @@ p {
   flex-shrink: 0;
   background: var(--primary-active, #d100c9);
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .image-card-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-card {
+    width: 100%;
+  }
 }

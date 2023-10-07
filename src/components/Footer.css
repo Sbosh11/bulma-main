@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #430964;
-  max-width: 1440px;
+  width: 100%;
+  margin: auto;
 }
 .footer-inner {
   display: flex;
@@ -14,8 +15,7 @@
   background-color: #430964;
   color: #fff;
   font-size: 16px;
-  max-width: 1279px;
-  width: 100%;
+  width:85%;
   margin: auto;
 }
 

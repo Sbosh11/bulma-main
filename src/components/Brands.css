@@ -2,12 +2,15 @@
 
 .first-container.brands {
   padding: 69px 0 0 0;
+  background: #fff;
 }
 .brand-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
-  width: 1279px;
+  width: 85%;
+  background: #fff;
+
   margin: 0 auto 90px;
 }
 
