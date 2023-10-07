@@ -1,4 +1,4 @@
-/* WhatWeDo.css */
+/* WhatWeDo */
 
 .first-container {
   padding: 85px 0 0 0;
@@ -38,8 +38,6 @@
 
 .we-offer-a {
   color: var(--shades-700, #242424);
-  /* heading/is-1 */
-
   font-size: 3em;
   font-style: normal;
   font-weight: 700;

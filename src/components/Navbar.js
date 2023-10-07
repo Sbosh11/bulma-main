@@ -43,7 +43,7 @@ function Navbar() {
               to="brands"
               smooth={true}
               duration={500}
-              onClick={closeMenu} // Close the menu when a link is clicked
+              onClick={closeMenu} 
             >
               Industries
             </ScrollLink>
@@ -52,7 +52,7 @@ function Navbar() {
               to="case-studies"
               smooth={true}
               duration={500}
-              onClick={closeMenu} // Close the menu when a link is clicked
+              onClick={closeMenu} 
             >
               Cases
             </ScrollLink>
@@ -61,7 +61,7 @@ function Navbar() {
               to="footer"
               smooth={true}
               duration={500}
-              onClick={closeMenu} // Close the menu when a link is clicked
+              onClick={closeMenu}
             >
               Contact
             </ScrollLink>
