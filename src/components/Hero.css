@@ -5,8 +5,8 @@
   justify-content: flex-end;
   align-items: flex-start;
   text-align: left;
-  background: url("../imgs/Hero\ Image.png"), lightgray 50% / cover no-repeat;
-  background-position: center;
+  background: url("../imgs/Hero\ Image.png");
+  background-size: cover;
   background-repeat: no-repeat !important;
   padding: 0;
   width: 100%;
@@ -83,7 +83,7 @@
     justify-content: space-around;
     margin: 0px auto;
   }
-  
+
   .hero-heading,
   .hero-subtitle {
     width: 100%;
