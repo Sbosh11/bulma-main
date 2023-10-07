@@ -79,13 +79,12 @@
   text-align: left;
   display: block;
 }
-.explore-open-jobs-container,
-.youtube-behance-dribbble-container,
-.github-linkedin-teams-container,
-.facebook-instagram-twitter-container,
-.terms-of-service-container {
-  /*flex: 1;*
-  padding: 10px;*/
+.explore-open-jobs-container a,
+.youtube-behance-dribbble-container a,
+.github-linkedin-teams-container a,
+.facebook-instagram-twitter-container a,
+.terms-of-service-container a {
+  padding: 7px 0;
 }
 
 .explore-open-jobs-container p {

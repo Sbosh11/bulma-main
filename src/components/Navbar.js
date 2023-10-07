@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
+import BrandLogo from "../imgs/brand logo.svg";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,12 +20,14 @@ function Navbar() {
         <div className="navbar">
           <a href="#home">
             <img
-              src="https://d1xzdqg8s8ggsr.cloudfront.net/651e4a1a203962f3b10ddba7/d651b0eb-4743-4d38-b15f-274b7ac3c1b7_1696561304016730490"
+              src={BrandLogo}
               alt="Brand Logo"
               className="brand-image"
+              width="100px"
+              height="32px"
             />
           </a>
-         
+
           <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
             <ScrollLink
               className="scroll-link"
