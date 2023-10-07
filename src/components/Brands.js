@@ -5,7 +5,7 @@ import brandData from "../content/brandData"; // Import the brand data
 const Brands = () => {
   return (
     <>
-      <div className="first-container">
+      <div className="first-container brands">
         <div className="heading-tag">
           <div className="heading-tag-child"></div>
           <div className="case-studies1">You’ll be in good company</div>

@@ -28,7 +28,7 @@ const CaseStudies = () => {
 
   return (
     <>
-      <div className="first-container">
+      <div className="first-container case-studies">
         <div className="heading-tag">
           <div className="heading-tag-child"></div>
           <div className="case-studies1">Case Studies</div>

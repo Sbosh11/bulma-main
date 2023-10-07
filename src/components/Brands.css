@@ -1,12 +1,14 @@
 /* Brands.css */
 
+.first-container.brands {
+  padding: 69px 0 0 0;
+}
 .brand-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
-  max-width: 1440px;
-
-  padding: 20px;
+  width: 1279px;
+  margin: 0 auto 90px;
 }
 
 .brand-item {
@@ -15,6 +17,7 @@
 
 .brand-item img {
   max-width: 100%;
+  padding: 10px;
 }
 
 .brand-description {

@@ -1,9 +1,9 @@
 import React from "react";
 import "./WhatWeDo.css";
-import cards from "../content/cards"; 
+import cards from "../content/cards";
 const WhatWeDo = () => {
   return (
-    <div className="first-container">
+    <div className="first-container what-we-do">
       <div className="heading-tag">
         <div className="heading-tag-child"></div>
         <div className="what-we-do1">What we do</div>
