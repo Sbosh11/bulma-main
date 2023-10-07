@@ -22,7 +22,7 @@
 
 .what-we-do1 {
   color: #000;
-  font-family: Inter;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -39,7 +39,7 @@
 .we-offer-a {
   color: var(--shades-700, #242424);
   /* heading/is-1 */
-  font-family: Inter;
+
   font-size: 3em;
   font-style: normal;
   font-weight: 700;
@@ -72,7 +72,6 @@
 }
 
 .heading {
-  font-family: Inter;
   font-size: 24px;
   font-weight: 700;
   color: #000;
@@ -80,28 +79,36 @@
 }
 
 .text {
-  font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   color: var(--shades-700, #242424);
   line-height: 150%;
 }
 
+@media screen and (max-width: 1025px) {
+  .section-container {
+    flex-wrap: wrap;
+  }
+  .section {
+    width: calc(50% - 20px);
+  }
+}
 @media screen and (max-width: 768px) {
   /*.first-container {
     padding: 50px 0 0 0;
   }*/
-  .section-container {
+  /*.section-container {
     flex-direction: column;
+    flex-wrap: wrap;
   }
-
+*/
   .section {
     width: 100%;
   }
 
   .we-offer-a {
     color: var(--shades-700, #242424);
-    font-family: Inter;
+
     font-size: 2.5em;
     font-weight: 700;
     line-height: 120%;
