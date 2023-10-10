@@ -251,7 +251,6 @@ p {
   .overlay-content {
     width: 90%;
     flex-wrap: wrap;
-    margin: auto;
   }
 
   .carouselwrapper {
