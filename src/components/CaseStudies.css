@@ -1,3 +1,5 @@
+/* Add the updated CSS code below */
+
 h2,
 p {
   margin: 0;
@@ -18,7 +20,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   flex-shrink: 0;
   width: 32.65%;
   height: 399px;
@@ -81,6 +83,149 @@ p {
   margin: 0;
 }
 
+#case-studies {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.carouselwrapper {
+  overflow-x: hidden;
+  background: var(--color-lightgrey);
+  position: relative;
+}
+
+.carousel {
+  width: 100%;
+  margin: auto;
+  /* height: 776px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  background: #fff;
+  padding: 0;
+  gap: 10px;
+  /*overflow-x: hidden;*/
+}
+
+.carousel li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 32.65%; /* Display three slides per row on desktop */
+  height: 399px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dots div {
+  cursor: pointer;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #eae4e4;
+  border-radius: 50%;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.dots div:active {
+  background: #d100c9;
+}
+
+.dots div:hover {
+  background: #d100c9;
+}
+
+.dots div:focus {
+  outline: none;
+  border: 1px solid white;
+  background: #d100c9;
+}
+
+.card {
+  box-shadow: 0px 1px 2px 0px var(--card-shadow);
+  border-radius: 4px;
+  margin: var(--card-margin);
+  background: var(--color-white);
+}
+
+.card .material-icons {
+  font-size: 4.8rem;
+}
+
+.card p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes next {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(
+      calc(0px + var(--cardWidth) + 10px)
+    ); /* Add 10px for gap */
+  }
+}
+
+@keyframes next {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(
+      calc(0px + var(--cardWidth) + 10px)
+    ); /* Add 10px for gap */
+  }
+}
+
+@-webkit-keyframes prev {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(
+      calc(0px - var(--cardWidth) - 10px)
+    ); /* Add 10px for gap */
+  }
+}
+
+@keyframes prev {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(
+      calc(0px - var(--cardWidth) - 10px)
+    ); /* Add 10px for gap */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel li {
+    width: 50%; /* Display two slides per row on tablets */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel li {
+    width: 100%; /* Display one slide per row on mobile devices */
+  }
+}
+
 @media screen and (max-width: 768px) {
   .image-card-container {
     width: 100%;
@@ -93,6 +238,16 @@ p {
   }
 
   .image-card {
-    width: 100%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-card {
+    width: 100% !important;
+  }
+
+  .overlay-content {
+    width: 70%;
   }
 }

@@ -5,6 +5,7 @@ import CaseStudies from "./CaseStudies";
 import Brands from "./Brands";
 import Footer from "./Footer";
 
+
 function Home() {
   return (
     <div className="home" id="home">

@@ -2,6 +2,41 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
+  const contactInfo = {
+    address: "22 Street Name, Suburb, 8000,",
+    address2: "Cape Town, South Africa",
+    phone: "+27 21 431 0001",
+    email: "enquirie@website.co.za",
+  };
+
+  const socialLinks = [
+    { name: "Youtube", url: "https://www.youtube.com/" },
+    { name: "Behance", url: "https://www.behance.net/" },
+    { name: "Dribbble", url: "https://dribbble.com/" },
+    { name: "Github", url: "https://github.com/" },
+    { name: "Linkedin", url: "https://www.linkedin.com/" },
+    {
+      name: "Teams",
+      url: "https://www.microsoft.com/en-us/microsoft-teams/log-in",
+    },
+    { name: "Facebook", url: "https://www.facebook.com/" },
+    { name: "Instagram", url: "https://www.instagram.com/" },
+    { name: "Twitter", url: "https://twitter.com/" },
+  ];
+
+  // Split socialLinks into three equal parts
+  const splitSocialLinks = socialLinks.reduce((resultArray, item, index) => {
+    const chunkIndex = Math.floor(index / 3);
+
+    if (!resultArray[chunkIndex]) {
+      resultArray[chunkIndex] = [];
+    }
+
+    resultArray[chunkIndex].push(item);
+
+    return resultArray;
+  }, []);
+
   return (
     <div className="footer">
       <div className="footer-inner">
@@ -11,15 +46,15 @@ const Footer = () => {
         </div>
         <div className="footer-middle">
           <div className="have-a-project-container">
-            <p className="">Have a project in mind?</p>
-            <p className="">Let's make it happen</p>
+            <p>Have a project in mind?</p>
+            <p>Let's make it happen</p>
           </div>
           <div className="street-name-suburb-container">
-            <p className="">22 Street Name, Suburb, 8000,</p>
-            <p className="">Cape Town, South Africa</p>
-            <p className="">+27 21 431 0001</p>
-            <a className="enquire" href="mailto:enquirie@website.co.za">
-              enquirie@website.co.za
+            <p>{contactInfo.address}</p>
+            <p>{contactInfo.address2}</p>
+            <p>{contactInfo.phone}</p>
+            <a className="enquire" href={`mailto:${contactInfo.email}`}>
+              {contactInfo.email}
             </a>
           </div>
         </div>
@@ -30,27 +65,21 @@ const Footer = () => {
             <a href="/impressum">Impressum</a>
           </div>
 
-          <div className="youtube-behance-dribbble-container">
-            <a href="https://www.youtube.com/">Youtube</a>
-            <a href="https://www.behance.net/">Behance</a>
-            <a href="https://dribbble.com/">Dribbble</a>
-          </div>
-          <div className="github-linkedin-teams-container">
-            <a href="https://github.com/">Github</a>
-            <a href="https://www.linkedin.com/">Linkedin</a>
-            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in">
-              Teams
-            </a>
-          </div>
-          <div className="facebook-instagram-twitter-container">
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://twitter.com/">Twitter</a>
-          </div>
+          {/*social links in three columns */}
+          {splitSocialLinks.map((column, columnIndex) => (
+            <div key={columnIndex} className="social-column">
+              {column.map((link, linkIndex) => (
+                <a key={linkIndex} href={link.url}>
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          ))}
+
           <div className="explore-open-jobs-container">
             <a href="/open-jobs">Explore open jobs</a>
-            <p className="">&nbsp;</p>
-            <p className=""> &copy; 2000—2023 Company Name</p>
+            <p>&nbsp;</p>
+            <p>&copy; 2000—2023 Company Name</p>
           </div>
         </div>
       </div>
