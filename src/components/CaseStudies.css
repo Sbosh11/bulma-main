@@ -94,6 +94,7 @@ p {
   overflow-x: hidden;
   background: var(--color-lightgrey);
   position: relative;
+  width: 100%;
 }
 
 .carousel {
@@ -248,6 +249,16 @@ p {
   }
 
   .overlay-content {
-    width: 70%;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .carouselwrapper {
+    background: var(--color-lightgrey);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
   }
 }
