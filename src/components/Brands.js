@@ -8,7 +8,9 @@ const Brands = () => {
       <div className="first-container brands" id="brands">
         <div className="heading-tag">
           <div className="heading-tag-child"></div>
-          <div className="case-studies1">You’ll be in good company</div>
+          <div className="case-studies1" id="brands1">
+            You’ll be in good company
+          </div>
         </div>
         <b className="we-offer-a">Trusted by leading brands</b>
       </div>

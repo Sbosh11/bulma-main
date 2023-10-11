@@ -40,10 +40,10 @@ function Navbar() {
             </ScrollLink>
             <ScrollLink
               className="scroll-link"
-              to="brands"
+              to="brands1"
               smooth={true}
               duration={500}
-              onClick={closeMenu} 
+              onClick={closeMenu}
             >
               Industries
             </ScrollLink>
@@ -52,7 +52,7 @@ function Navbar() {
               to="case-studies"
               smooth={true}
               duration={500}
-              onClick={closeMenu} 
+              onClick={closeMenu}
             >
               Cases
             </ScrollLink>
